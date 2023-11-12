@@ -1,0 +1,74 @@
+/*this is to give all */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "https://fonts.google.com/specimen/Nunito+Sans";
+}
+
+body{
+background: var(--bg_body);
+color: var(--body-text);
+
+}
+button{
+	margin:20px;
+	padding:5px 10px 5px 10px;
+	}
+	img{
+		width: 250px;
+		height: 180px;
+	}
+	 header {
+		width:100%;
+		position: fixed;
+		padding-top: 20px;
+		padding-bottom: 10px;		
+		margin-bottom: 20px;
+		background-color: var(--bg_default);
+        display: flex;
+	  
+
+    }
+	.words{
+		margin-top: 100px;
+	}
+	.headline{
+		color: var(--brand-secondary);
+	}
+	.headlineSection{
+		text-align: center;
+	}
+
+	.hhh{
+	    color: var(--brand-primary);
+	}
+
+	.b1{
+		align-self: center;
+		float: right;
+		border:1px solid var(--lines-color);
+	    border-radius: 5px;
+	    color: var(--lines-color);
+
+	}
+	
+	.grid{
+		display: flex;
+		flex-wrap: wrap;/*not working*/
+	}
+	.cards{
+		
+		width: 280px;
+		background: var(--bg_default);
+		border-radius: 5px;
+		padding: 10px;
+		margin: 15px;
+		
+	}
+	.b{
+		font-style: bold;
+	}
+	
+
+	

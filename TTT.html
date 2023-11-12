@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Goggle font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    
+
+<style>
+	
+:root{
+	font-family: 'Nunito Sans', sans-serif;
+		margin: 0;
+	padding: 0;
+		--brand-primary: #0768AC;
+	--brand-secondary: #03C180;
+	--bg_default: #FFFFFF;
+	--bg_body: #F0F9FF;
+	--lines-color: #DDDDDD;
+	--body-text: #333333;
+	--heart-color: #DC143C;
+	}
+	body{
+		/*background-color: #333333;*/
+	}
+svg{
+	width: 100%;
+}
+.tr{
+	width:100%;
+    fill:var(--brand-secondary);
+}
+.tl{
+	width:100%;
+	fill:#0768AC;
+    /**fill:linear-gradient(var(--brand-primary),var(--brand-secondary));
+	fill:moz-linear-gradient (var(--brand-primary),var(--brand-secondary));
+	fill:webkit-gradient (var(--brand-primary),var(--brand-secondary));*/
+}
+
+
+.f{
+display: flex;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-right: 300px solid blue;
+	border-bottom: 25px solid transparent;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-left: 300px solid ;
+  background:  linear-gradient(  right,red, blue);
+	border-bottom: 25px solid transparent;
+    
+}
+
+table{
+border-radius: 5px;
+padding: 3px;
+margin: 3px;
+border: 1px solid black;
+}
+td {
+	padding: 3px;
+    margin: 3px;
+	border:1px solid black;
+}
+</style>
+
+</head>
+<body >
+
+	<table  >
+		<tr>	
+		<th class="cource_name" align="left"> HTML Sub Topics</th></tr>
+	<tr>
+		<td class="trim_extra_txt border"> <ion-icon name="checkmark-circle-outline"></ion-icon> HTML syntax and
+		  structure
+		</td></tr>
+		<tr>
+		<td class="trim_extra_txt border"> <ion-icon name="checkmark-circle-outline"></ion-icon> HTML elements and
+		  attributes
+		</td></tr>
+		<tr>
+		<td class="trim_extra_txt border"> <ion-icon name="checkmark-circle-outline"></ion-icon> HTML forms and input
+		  elements
+		</td></tr>
+		<tr>
+			<td class="trim_extra_txt border"> <ion-icon name="checkmark-circle-outline"></ion-icon> HTML tables and lists
+			</td>
+		</tr>
+		<tr>
+			<td class="trim_extra_txt border"> <ion-icon name="checkmark-circle-outline"></ion-icon> HTML multimedia
+		  elements (audio, video, images)
+			</td>
+		</tr>
+		<tr>
+			<td class="trim_extra_txt border"> <ion-icon name="checkmark-circle-outline"></ion-icon>HTML accessibility and
+		  semantic markup
+			</td>
+		</tr>
+		
+	  </table>
+
+	<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+		  <linearGradient id="gradient" x1="100%" y1="0%">
+			<stop offset="50%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+		  </linearGradient>
+		</defs>
+		<polygon points="50,0 0,100 100,100" fill="url(#gradient)" />
+	  </svg>
+	  
+
+	<svg version="1.2" 
+	xmlns="http://www.w3.org/2000/svg" 
+	viewBox="0 0 1884 79" 
+	width="1884" 
+	height="79">
+		<title>header</title>
+		<defs>
+			<image  width="1884" height="79" id="img1" href="data:image/png;base64,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"/>
+		</defs>
+		<style>
+		</style>
+		<use id="Background" href="#img1" x="0" y="0"/>
+	</svg>
+
+	<svg  transform="scale(1.0)">
+            
+		<polyline    class="tr "
+		points="800,0 1200,0 1200,40 0,0"
+		></polyline>
+		<polyline   class=tl
+		 points="0,0 1000,0 0,40 0,0"></polyline>
+	</svg>
+
+
+	<svg  transform="scale(1.0)">
+            
+		<polyline    class="tr "
+		points="80,0 200,0 200,40 0,0"
+		></polyline>
+		<polyline   class=tl
+		 points="0,0 180,0 0,40 0,0"></polyline>
+	</svg>
+
+<h2>Triangle Left CSS</h2>
+<div class = f>
+  <div class="triangle-right"></div>
+<div class="triangle-left "></div>
+
+<table>
+<tr>
+	<th> </th>
+</tr>
+
+</table>
+
+
+
+</div>
+</body>
+</html> 
