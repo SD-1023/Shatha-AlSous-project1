@@ -1,0 +1,124 @@
+              Backend Frameworks and Libraries
+              Databases and APIs 
+
+web development concepts and techniques
+
+              
+Backend Frameworks and Libraries 
+Django
+Author: Olivia Martinez
+****
+Backend Frameworks and Libraries 
+Flask
+Author: Ethan Thompson
+
+Databases and APIs 
+SQL
+Author: Madison Davis
+****14
+Databases and APIs 
+NoSQL
+Author: Isabella Wilson
+****15
+Databases and APIs 
+REST APIs
+Author: Jacob Garcia
+***16
+Databases and APIs 
+GraphQL
+Author: Mia Brown
+***17
+web development concepts and techniques
+OAuth
+Author: Evelyn Nguyen
+***18
+web development concepts and techniques
+JSON
+Author: Liam Hernandez
+****19
+Web Development Concepts and T...
+AJAX
+Author: Avery Paraz
+***20
+Web Development Concepts and T
+Websockets
+Author: Victoria Kim
+****21
+
+Web Development Concepts and T....
+Responsive Design
+Author: Ryan Jones.
+****22
+Web Development Concepts and T...
+Accessibility
+Author: Luke Davis
+
+****23
+Web Development Concepts and T
+User Interface (UI)
+Author: Grace Witson
+*****24
+Web Development Concepts and T....
+Design Systems
+Author: Nipah Martinez
+****25
+Web Development Concepts and T
+Performance Optimization
+Author: Chice Taylor
+***26
+Web Development Concepts and T
+Cross-Browser Compatibility
+Author: David Lee
+***27
+Web Development Concepts and T
+Search Engine Optimization (SEO)
+Author: Emily Kim
+**28
+Web Development Concepts and T...
+Web Security
+Author: Gabriel Hemandez
+
+Web Development Concepts and T...
+Testing and Debugging
+Author: Avery Perez
+
+Web Development Concepts and T...
+Integration/Continuous....
+Author: Madison Davis
+
+Web Development Concepts and T
+DevOps
+Author: Isabella Wilson
+
+Web Development Concepts and T....
+Cloud Computing
+Authoc: Jacob Garcia
+
+Web Development Concepts and T...
+ Docker
+ Author: Mia Brown
+ 
+ 
+ Web Development Concepts and T....
+ Microservices
+ Author: Evelyn Nguyen
+ 
+ Web Development Concepts and T..
+ Progressive Web Apps (PWA)
+ Author: Liam Hernandez
+ 
+ Web Development Concepts and T
+ Web Accessibility Initiative(WAI)
+ Author: Avery Perez
+ 
+ 
+ Web Development Concepts and T...
+ Content Management Systems(CMS)
+ Author: Victoria Kim
+ 
+ 
+ Web Development Concepts and T...
+ Web Analytics
+ Author: Ryan Jones
+ 
+ 

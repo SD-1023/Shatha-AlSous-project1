@@ -27,20 +27,33 @@
 
         <b class="hhh" alighn="left"> Wep Topics</b>
       </div>
-      <div class="intro_button_div">
-        <a href='#Contact_me_at'><button class="b1" id="b_dark"> <ion-icon aria-label="Dark☾" class="moon"
-              name="moon-outline"></ion-icon> Dark Mood </button></a>
-        <a a href='#About_me'><button class="b1" id="b_fav"><ion-icon aria-label="Favorite♡" class="heart"
-              name="heart-outline"></ion-icon> Favorites
-          </button></a>
+      <div>
+        <a class="b1" id="b_dark"> <ion-icon aria-label="Dark☾" name="moon-outline"></ion-icon>
+          <button class="no_porder b_t">
+            Dark
+            Mood1
+          </button> </a>
+        <a class="b1" id="b_fav"><ion-icon aria-label="Favorite♡" name="heart-outline"></ion-icon>
+          <button class="no_porder b_t">
+            Favorites1
+          </button>
+
+        </a>
       </div>
+      <!--div class="intro_button_div">
+        <button class="b1" id="b_dark"> <ion-icon aria-label="Dark☾" name="moon-outline"></ion-icon> Dark
+          Mood </button>
+        <button class="b1" id="b_fav"><ion-icon aria-label="Favorite♡" name="heart-outline"></ion-icon>
+          Favorites
+        </button>
+      </div-->
+
     </div>
 
 
     <div class="words">
-      <h2 class="">
-        <b class="headline">Welcome to our website!</b>
-      </h2>
+
+      <b class="headline bold">Welcome to our website!</b>
       <p>
         We have a new design that's fresh, modern, and easy to use.
       </p>
@@ -54,22 +67,45 @@
   <br>
   <br>
   <br>
-  <br>
 
 
   <!-- the search par -->
   <div class="search_bar move_sides">
     <!--search_conponents-->
-    <div class="c_search">
+    <div class="c_search row_flex">
 
-      <input class="search_input" placeholder="Search the website..." type="search">
+      <ion-icon class="search_outline" name="search-outline"></ion-icon> <input class="search_input "
+        placeholder="Search the website..." type="search">
+      <div class="search_drop_down row_flex" id="search_drop_down">
+
+        <div>
+          <label for="sort_by">Sort by:</label>
+          <select class="no_porder" name="sort_by" id="sort_by">
+            <option value="default">default</option>
+            <option value="date">date</option>
+            <option value="nam">name</option>
+            <option value="ratings">ratings</option>
+          </select>
+        </div>
+
+        <div> <label for="filter_by">Filter by</label>
+          <select class="no_porder" name="filter_by" id="filter_by">
+            <option value="default">default</option>
+            <option value="category">category</option>
+            <option value="author">auther</option>
+            <option value="ratings">ratings</option>
+          </select>
+        </div>
+
+
+      </div>
       <span>
       </span>
     </div>
 
 
     <h3>
-      <b class=""> "24" Web Topics Found</b>
+      <b class="bold"> "24" Web Topics Found</b>
     </h3>
   </div>
   <br>
@@ -89,7 +125,8 @@
 
 
       <!-- cards -->
-      <section class=" grid ">
+      <section class=" grid " id="grid">
+
         <!-- Item #1 -->
         <article class="cards">
           <img class="cards_img" alt="html" src="img/html.png">
@@ -98,7 +135,7 @@
             <p class="trim_extra_txt">
               Web Development Languages
             </p>
-            <h2 class="trim_extra_txt">HTML</h2>
+            <p class="trim_extra_txt bold">HTML</p>
 
             <!--the stars-->
             <div class="stars">
@@ -114,15 +151,16 @@
             </h5>
           </div>
         </article>
+
         <!-- Item #2 -->
         <article class="cards">
-          <img class="cards_img" alt="css" src="img/css.jpg">
+          <img class="cards_img" alt="css" src="img/css.webp">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Web Development Languages
             </p>
-            <h2 class="trim_extra_txt"> CSS</h2>
+            <p class="trim_extra_txt bold"> CSS</p>
 
             <!--the stars-->
             <div class="stars">
@@ -140,15 +178,14 @@
         </article>
 
         <!-- Item #3 -->
-
         <article class="cards">
-          <img class="cards_img" alt="js" src="img/js.png">
+          <img class="cards_img" alt="js" src="img/javascript.jpg">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Web Development Languages
             </p>
-            <h2 class="trim_extra_txt">Java Script </h2>
+            <p class="trim_extra_txt bold">Java Script </p>
 
             <!--the stars-->
             <div class="stars">
@@ -166,27 +203,26 @@
         </article>
 
         <!-- Item #4 -->
-
         <article class="cards">
-          <img class="cards_img" alt="jq" src="img/jq.png">
+          <img class="cards_img" alt="jq" src="img/jquery.png">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Frontend Frameworks and Libraries
             </p>
-            <h2 class="trim_extra_txt">JQuery </h2>
- <!--the stars-->
-              <div class="stars">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
+            <p class="trim_extra_txt bold">JQuery </p>
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
 
             <h5 class="author trim_extra_txt">
 
-      
+
               Author: John Jonson
             </h5>
           </div>
@@ -194,13 +230,13 @@
 
         <!-- Item 5 -->
         <article class="cards">
-          <img class="cards_img" alt="angular" src="img/ancylar.png">
+          <img class="cards_img" alt="angular" src="img/angular.png">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Frontend Frameworks and Libraries
             </p>
-            <h2 class="trim_extra_txt">Angular </h2>
+            <p class="trim_extra_txt bold">Angular </p>
 
             <!--the stars-->
             <div class="stars">
@@ -217,16 +253,15 @@
           </div>
         </article>
 
-
         <!-- Item 6 -->
         <article class="cards">
-          <img class="cards_img" alt="react" src="img/react.png">
+          <img class="cards_img" alt="react" src="img/react.webp">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Frontend Frameworks and Libraries
             </p>
-            <h2 class="trim_extra_txt">React JS </h2>
+            <p class="trim_extra_txt bold">React JS </p>
 
             <!--the stars-->
             <div class="stars">
@@ -245,13 +280,13 @@
 
         <!-- Item 7 -->
         <article class="cards">
-          <img class="cards_img" alt="vue" src="img/vue.png">
+          <img class="cards_img" alt="vue" src="img/vuejs.jpeg">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Frontend Frameworks and Libraries
             </p>
-            <h2 class="trim_extra_txt">Vue</h2>
+            <p class="trim_extra_txt bold">Vue</p>
 
             <!--the stars-->
             <div class="stars">
@@ -270,13 +305,13 @@
 
         <!-- Item 8 -->
         <article class="cards">
-          <img class="cards_img" alt="node" src="img/node.png">
+          <img class="cards_img" alt="node" src="img/nodejs.webp">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Backend Frameworks and Libraries
             </p>
-            <h2 class="trim_extra_txt">Node.js</h2>
+            <p class="trim_extra_txt bold">Node.js</p>
 
             <!--the stars-->
             <div class="stars">
@@ -292,15 +327,16 @@
             </h5>
           </div>
         </article>
+
         <!-- Item 9 -->
         <article class="cards">
-          <img class="cards_img" alt="express" src="img/express.png">
+          <img class="cards_img" alt="express" src="img/expressjs.webp">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Backend Frameworks and Libraries
             </p>
-            <h2 class="trim_extra_txt">Express.js</h2>
+            <p class="trim_extra_txt bold">Express.js</p>
 
             <!--the stars-->
             <div class="stars">
@@ -317,16 +353,42 @@
           </div>
         </article>
 
-
         <!-- Item 10 -->
         <article class="cards">
-          <img class="cards_img" alt="ruby" src="img/ruby.jpg">
+          <img class="cards_img" alt="ruby" src="img/ruby.jpeg">
 
           <div class="bp">
             <p class="trim_extra_txt">
               Backend Frameworks and Libraries
             </p>
-            <h2 class="trim_extra_txt">Ruby on Rails</h2>
+            <p class="trim_extra_txt bold">Ruby on Rails</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <p class="author trim_extra_txt litle">
+              Author: William Lee
+            </p>
+          </div>
+        </article>
+
+        <!--20-->
+
+        <!-- Item #11 -->
+        <article class="cards">
+          <img class="cards_img" alt="html" src="img/django.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Backend Frameworks and Libraries
+            </p>
+            <p class="trim_extra_txt bold">Django</p>
 
             <!--the stars-->
             <div class="stars">
@@ -338,39 +400,807 @@
             </div>
 
             <h5 class="author trim_extra_txt">
-              Author: William Lee
+              Author: Olivia Martinez
             </h5>
           </div>
         </article>
+
+        <!-- Item #12 -->
+        <article class="cards">
+          <img class="cards_img" alt="css" src="img/flask.webp">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Backend Frameworks and Libraries
+            </p>
+            <p class="trim_extra_txt bold"> Flask</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Ethan Thompson
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item #13 -->
+        <article class="cards">
+          <img class="cards_img" alt="js" src="img/sql.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Databases and APIs
+            </p>
+            <p class="trim_extra_txt bold">SQL </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Madison Davis
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item #14 -->
+        <article class="cards">
+          <img class="cards_img" alt="jq" src="img/nosql.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Databases and APIs
+            </p>
+            <p class="trim_extra_txt bold">NoSQL </p>
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+
+
+              Author: Isabella Wilson
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 15 -->
+        <article class="cards">
+          <img class="cards_img" alt="angular" src="img/restapi.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Databases and APIs
+            </p>
+            <p class="trim_extra_txt bold">REST APIs
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Jacob Garcia
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 16 -->
+        <article class="cards">
+          <img class="cards_img" alt="react" src="img/graphql.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Databases and APIs
+            </p>
+            <p class="trim_extra_txt bold">GraphQL </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Mia Brown
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 17 -->
+        <article class="cards">
+          <img class="cards_img" alt="vue" src="img/oauth.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">OAuth</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Evelyn Nguyen
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 18 -->
+        <article class="cards">
+          <img class="cards_img" alt="node" src="img/json.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">JSON</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Liam Hernandez
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 19 -->
+        <article class="cards">
+          <img class="cards_img" alt="express" src="img/ajax.gif">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">AJAX</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Avery Paraz
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 20 -->
+        <article class="cards">
+          <img class="cards_img" alt="ruby" src="img/websockets.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Websockets</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <p class="author trim_extra_txt litle">
+              Author: Victoria Kim
+            </p>
+          </div>
+        </article>
+
+
+        <!--21 - 30-->
+
+        <!-- Item #21 -->
+        <article class="cards">
+          <img class="cards_img" alt="html" src="img/responsive.gif">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Responsive Design
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Ryan Jones.
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item #22 -->
+        <article class="cards">
+          <img class="cards_img" alt="css" src="img/accessibility.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold"> Accessibility</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Luke Davis
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 39   ----- -->
+        <article class="cards">
+          <img class="cards_img" alt="express" src="img/ux.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">User Experience (UX) </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Luke Davis
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item #23 -->
+        <article class="cards">
+          <img class="cards_img" alt="js" src="img/ui.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">User Interface (UI) </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Grace Witson
+            </h5>
+          </div>
+        </article>
+
+
+        <!-- Item #24 -->
+        <article class="cards">
+          <img class="cards_img" alt="jq" src="img/design-systems.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Design Systems
+            </p>
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Nipah Martinez
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 25 -->
+        <article class="cards">
+          <img class="cards_img" alt="angular" src="img/performance.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Performance Optimization </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Chice Taylor
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 26 -->
+        <article class="cards">
+          <img class="cards_img" alt="react" src="img/cross-browser.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Cross-Browser Compatibility </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: David Lee
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 27 -->
+        <article class="cards">
+          <img class="cards_img" alt="vue" src="img/seo.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Search Engine Optimization (SEO) </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Emily Kim
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 28 -->
+        <article class="cards">
+          <img class="cards_img" alt="node" src="img/web-security.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Web Security </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Gabriel Hemandez
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 29 -->
+        <article class="cards">
+          <img class="cards_img" alt="express" src="img/testing.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Testing and Debugging
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Avery Perez
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 30 -->
+        <article class="cards">
+          <img class="cards_img" alt="ruby" src="img/ci-cd.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Integration/Continuous</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <p class="author trim_extra_txt litle">
+              Author: Madison Davis
+            </p>
+          </div>
+        </article>
+        <!--31-39-->
+
+        <!-- Item #31 -->
+        <article class="cards">
+          <img class="cards_img" alt="html" src="img/devops.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">DevOps</p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Isabella Wilson
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item #32 -->
+        <article class="cards">
+          <img class="cards_img" alt="css" src="img/cloud.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold"> Cloud Computing </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Authoc: Jacob Garcia
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item #33 -->
+        <article class="cards">
+          <img class="cards_img" alt="js" src="img/docker.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold"> Docker
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Emily Clin
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item #34 -->
+        <article class="cards">
+          <img class="cards_img" alt="jq" src="img/microservices.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold">Microservices </p>
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Evelyn Nguyen
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 35 -->
+        <article class="cards">
+          <img class="cards_img" alt="angular" src="img/pwa.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold"> Progressive Web Apps (PWA)
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Liam Hernandez
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 36 -->
+        <article class="cards">
+          <img class="cards_img" alt="react" src="img/wai.jpeg">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold"> Web Accessibility Initiative(WAI)
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Avery Perez
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 37 -->
+        <article class="cards">
+          <img class="cards_img" alt="vue" src="img/cms.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold"> Content Management Systems(CMS)
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Victoria Kim
+            </h5>
+          </div>
+        </article>
+
+        <!-- Item 38 -->
+        <article class="cards">
+          <img class="cards_img" alt="node" src="img/analytics.png">
+
+          <div class="bp">
+            <p class="trim_extra_txt">
+              Web Development Concepts and Techniques
+            </p>
+            <p class="trim_extra_txt bold"> Web Analytics
+            </p>
+
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h5 class="author trim_extra_txt">
+              Author: Ryan Jones
+            </h5>
+          </div>
+        </article>
+
+
+        <!--end of cards-->
 
 
       </section>
 
     </main>
 
-
     <footer class="footer">
       <b>Developed with <ion-icon class="heart" name="heart"></ion-icon> &copy; 2023</b>
     </footer>
   </div>
+  <!--fav bar-->
+  <div class="hidden " id="fav_hidden">
+    <div class="move_sides">
+      <p>My Favourite Topics</p>
+      <div class="row_flex">
+
+        <div class="fav_card">
+          <img class="cards_img" alt="react" src="img/react.png">
+          <div class="fav_details">
+            <p class="trim_extra_txt">React</p>
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="fav_card">
+          <img class="cards_img" alt="react" src="img/cloud.jpeg">
+          <div class="fav_details">
+            <p class="trim_extra_txt">Cloud Computing</p>
+            <!--the stars-->
+            <div class="stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
 
 
 
-    //  dark
-    var b_dark = document.getElementById("b_dark");
-    b_dark.onclick = function () {
-      //this sentence makes it go dark if you click once then light if you click again
-      document.body.classList.toggle("dark_theme")
+      //  dark
+      var b_dark = document.getElementById("b_dark");
+      b_dark.onclick = function () {
+        //this sentence makes it go dark if you click once then light if you click again
+        document.body.classList.toggle("dark_theme");
 
 
+      }
 
-    }
-  </script>
+      //fav
+      var fav_hidden = document.getElementById("fav_hidden");
+      var b_fav = document.getElementById("b_fav");
+      b_fav.onclick = function () {
+        fav_hidden.classList.toggle("hidden");
+
+      }
+
+      //go to details when 
+      var card=document.getElementById("grid");
+      
+      card.onclick=function(){
+        window.location.assign("details.html")
+      }
+      
+
+    </script>
 
 </body>
 

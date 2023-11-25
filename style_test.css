@@ -24,6 +24,11 @@ h3 {
 	line-height: 50px;
 }
 
+.row_flex {
+	display: flex;
+	flex-direction: row;
+}
+
 .stars>ion-icon {
 	margin-top: 20px;
 	color: gold;
@@ -41,46 +46,42 @@ h3 {
 }
 
 .intro_title_div {
-	width: 70%;
 	float: left;
 }
 
-.intro_title_button {
-	width: 30%;
-	float: right;
-}
 
 .words {
 	background-color: var(--bg_default);
 	padding-left: 40%;
 	padding-bottom: 20px;
 
-	/*to alighn at center*/
-
+	/**background-image: url("img/Untitled_h.webp");
+	background-size:cover;
+  background-repeat: no-repeat;*/
 }
 
-.words>p {
-
-}
 
 .headline {
 	color: var(--brand-secondary);
+	font-weight: 700;
 	/*green*/
 }
 
 .search_bar {
 	width: 100%;
-	height: 60dp;
 	position: fixed;
-	padding-top: 1%;
+	padding: 5px;
 	background-color: var(--bg_body);
+
 }
 
 .c_search {
+
 	width: 100%;
 	background-color: var(--bg_default);
-	padding: 10px;
 	border-radius: 5px;
+	border: 1px solid var(--lines-color);
+
 }
 
 .search_input {
@@ -89,8 +90,29 @@ h3 {
 	border-style: none;
 }
 
+.search_outline {
+	color: lightgray;
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	margin: auto;
+}
 
+#search_drop_down>div {
+	padding-left: 10px;
+	border-left: 1px solid var(--lines-color);
+	padding: 5px;
+}
 
+.no_porder {
+	border-style: none;
+	background: var(--bg_default);
+
+}
+
+select {
+	width: 150px;
+}
 
 .hhh {
 	color: var(--brand-primary);
@@ -98,13 +120,15 @@ h3 {
 }
 
 .b1 {
-	height: 30px;
+	text-align: center;
+	height: 25px;
 	background-color: var(--bg_default);
 	padding: 6px;
 	border: 1px solid var(--lines-color);
 	border-radius: 5px;
 	color: var(--body-text);
-
+	margin-left: 5px;
+	;
 }
 
 .grid {
@@ -128,6 +152,7 @@ h3 {
 	height: 120px;
 	margin-top: -10px;
 	object-fit: unset;
+	
 	border-radius: 5px 5px 0px 0px;
 	/* object-fit: inherit;*/
 
@@ -137,6 +162,12 @@ h3 {
 	margin-top: 3px;
 	padding-bottom: 3px;
 	color: var(--body-text);
+	font-size: 8px;
+	color: #DDDDDD;
+}
+
+.cards>p {
+	font-size: small;
 }
 
 /*to hide extra txt in the cards*/
@@ -180,7 +211,7 @@ h3 {
 /*the details css*/
 .back_dark {
 	width: 100%;
-	height: 55%;
+	height: 58%;
 	z-index: -10;
 	position: absolute;
 
@@ -209,10 +240,12 @@ h3 {
 .cource_name {
 	font-size: large;
 }
-.cource_name >b{
+
+.cource_name>b {
 	color: whitesmoke;
 
 }
+
 .cource_description {
 	margin-top: 10px;
 	color: white;
@@ -228,8 +261,8 @@ h3 {
 
 }
 
-.sup_topics_ul> li {
-	padding:10px;
+.sup_topics_ul>li {
+	padding: 10px;
 }
 
 .border_top {
@@ -293,5 +326,74 @@ h3 {
 	min-height: 50px;
 	text-align: center;
 	line-height: 50px;
+
+}
+
+#fav_hidden {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--bg_default);
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.fav_card {
+	width: 100px;
+	margin-right: 10px;
+	margin-top: 15px;
+	box-shadow: 0px 0px 5px 5px var(--lines-color);
+	border-radius: 5px;
+
+}
+
+.fav_card>.cards_img {
+	width: 100%;
+	height: 50px;
+}
+
+.fav_details>.stars>ion-icon {
+	margin: 0;
+}
+
+.fav_details {
+	padding: 5px;
+}
+
+.b1>ion_icon {
+	text-align: center;
+}
+
+.bold {
+	font-weight: 700;
+
+}
+
+.med {
+	font-weight: 400;
+}
+
+.litle {
+	font-weight: 200;
+}
+/*small screens*/
+@media(max-width : 599px) {
+	.b1>button {
+		width: 0px;
+	}
+
+	.b_t {
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+	}
+
+	.words {
+		padding-left: 20%;
+	}
 
 }
